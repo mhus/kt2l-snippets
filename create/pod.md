@@ -4,7 +4,7 @@ Simple pod template.
 
 ```yaml
 # TEMPLATE BEGIN
-# name: string: Name of the pod
+# name: string <Name of the pod>
 # TEMPLATE END
 apiVersion: v1
 kind: Pod
