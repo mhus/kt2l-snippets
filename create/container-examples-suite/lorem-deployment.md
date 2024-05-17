@@ -23,7 +23,6 @@ spec:
       labels:
         app: ${name}
     spec:
-      serviceAccountName: test-service-account
       containers:
         - image: mhus/example-lorem:latest
           imagePullPolicy: Always
