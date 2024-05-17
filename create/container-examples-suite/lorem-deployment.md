@@ -1,5 +1,5 @@
 
-# Example dice deployment
+# Example lorem deployment
 
 The deployment will replicate lorem pods that will generate infinite lorem output.
 
