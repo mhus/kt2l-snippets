@@ -31,8 +31,6 @@ spec:
           env:
             - name: INFINITE
               value: 'true'
-            - name: EXIT_ON
-              value: '5'
             - name: FAIL_ON
               value: '6'
             - name: SLEEP
