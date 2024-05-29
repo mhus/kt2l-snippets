@@ -11,6 +11,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: ${name}
+  namespace: ${namespace}
   labels:
     k8s-app: ${name}
 spec:

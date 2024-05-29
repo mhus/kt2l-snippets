@@ -1,15 +1,15 @@
 
-# Example dice deployment
+# Example dice StatefulSet
 
-The deployment will replicate throw dice pods that will generate random numbers between 1 and 6 until 5 or 6 is thrown.
+The stateful set will replicate throw dice pods that will generate random numbers between 1 and 6 until 5 or 6 is thrown.
 If 5 is thrown, the dice will exit normally. If 6 is thrown, the dice will exit with an error.
 
 ```yaml
 # TEMPLATE BEGIN
-# name: string <Name of the pod>:dicedeployment
+# name: string <Name of the pod>:dicestatefulset
 # TEMPLATE END
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   labels:
     app: ${name}
@@ -33,7 +33,9 @@ spec:
             - name: INFINITE
               value: 'true'
             - name: FAIL_ON
-              value: '6'
+              value: '99'
+            - name: SIDES
+              value: '100'
             - name: SLEEP
               value: '5'
 ```

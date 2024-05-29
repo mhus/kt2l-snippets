@@ -13,6 +13,7 @@ metadata:
   labels:
     app: ${name}
   name: ${name}
+  namespace: ${namespace}
 spec:
   replicas: 5
   selector:
