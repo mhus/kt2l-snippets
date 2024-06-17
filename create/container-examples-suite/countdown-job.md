@@ -1,18 +1,18 @@
 
 
-# Example Contdown Cronjob
+# Contdown Cronjob Example
 
 Create a cowndown cronjob that runs every minute.
 
 ```yaml
 # TEMPLATE BEGIN
-# name: string <Name of the pod>:contdown
+# name: string <Name of the pod>:countdown
 # TEMPLATE END
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: hello
-  namespace: cronjob
+  name: ${name}
+  namespace: ${namespace}
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:

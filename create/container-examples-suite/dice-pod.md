@@ -1,6 +1,6 @@
 
 
-# Example Dice Pod
+# Dice Pod Example
 
 Create a throw dice pod that rolls every second. If the result is 99 of 100, the pod will restart.
 

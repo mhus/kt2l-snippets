@@ -26,7 +26,6 @@ spec:
       image: mhus/example-web:latest
       ports:
         - containerPort: 80
-      resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 ```

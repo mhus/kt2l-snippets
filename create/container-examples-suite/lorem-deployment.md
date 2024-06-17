@@ -1,5 +1,5 @@
 
-# Example lorem deployment
+# Lorem Deployment Example
 
 The deployment will replicate lorem pods that will generate infinite lorem output.
 

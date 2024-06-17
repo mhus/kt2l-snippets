@@ -1,6 +1,6 @@
 
 
-# Example Dice Cronjob
+# Dice Cronjob Example
 
 Create a throw dice cronjob that rolls every minute. If the result is 99 of 100, the job will fail.
 

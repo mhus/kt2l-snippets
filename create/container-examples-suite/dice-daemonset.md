@@ -1,5 +1,5 @@
 
-# Example dice DaemonSet
+# Dice DaemonSet Example
 
 Create a daemonset.
 
@@ -24,15 +24,8 @@ spec:
         name: ${name}
     spec:
       containers:
-      - name: fluentd-elasticsearch
+      - name: ${name}
         image: mhus/example-dice:latest
-        resources:
-          limits:
-            memory: 200Mi
-            cpu: 100m
-          requests:
-            cpu: 100m
-            memory: 20Mi
         env:
             - name: INFINITE
               value: 'true'

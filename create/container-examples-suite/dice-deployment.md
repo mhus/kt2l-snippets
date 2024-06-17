@@ -1,5 +1,5 @@
 
-# Example dice deployment
+# Dice Deployment Example
 
 The deployment will replicate throw dice pods that will generate random numbers between 1 and 6 until 5 or 6 is thrown.
 If 5 is thrown, the dice will exit normally. If 6 is thrown, the dice will exit with an error.
